@@ -12,9 +12,6 @@ export const time = () => {
          Pukul ${details.hours.start} WIB sd ${details.hours.finish}</p>`
     );
 
-    marriageDiv.innerHTML = createTimeListItem('Akad', data.time.marriage);
-    receptionDiv.innerHTML = createTimeListItem('Resepsi', data.time.reception);
-
     mapLink.href = data.link.map;
     addressParagraph.textContent = data.time.address;
 };
