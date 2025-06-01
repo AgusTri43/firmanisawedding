@@ -11,12 +11,17 @@ export const welcome = () => {
     const [iconButton] = audioButton.children;
 
     const generateFigureContent = (bride) => {
-        const {L: {name: brideLName}, P: {name: bridePName}, couple: coupleImage} = bride;
+        const { L: { name: brideLName }, P: { name: bridePName }, couple: coupleImage } = bride;
         return `
             <img src="${coupleImage}" alt="couple animation">
-            <figcaption>
-                ${brideLName.split(' ')[0]} & ${bridePName.split(' ')[0]}
-            </figcaption>`;
+            <div class="figure-content">
+                <div class="caption-wrapper">
+                    <figcaption>${brideLName.split(' ')[0]}</figcaption>
+                    <p>&</p>
+                    <figcaption>${bridePName.split(' ')[0]}</figcaption>
+                </div>
+            </div>
+        `;
     };
 
     const generateParameterContent = () => {
@@ -24,10 +29,10 @@ export const welcome = () => {
         const params = getQueryParameter('to');
 
         if (params) {
-            weddingToElement.innerHTML = `Kepada Yth Bapak/Ibu/Saudara/i<br><span>${params}</span>`;
+            weddingToElement.innerHTML = `Kepada Yth <br><span>${params}</span>`;
             name.value = params;
         } else {
-            weddingToElement.innerHTML = `Kepada Yth Bapak/Ibu/Saudara/i<br><span>Teman-teman semua</span>`;
+            weddingToElement.innerHTML = `Kepada Yth <br><span>Teman-teman semua</span>`;
         }
     }
 

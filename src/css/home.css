@@ -2,7 +2,6 @@
     width: 100%;
     height: 100vh;
     text-align: center;
-    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,6 +9,19 @@
     position: relative;
     transition: all 2s ease;
     transform: translateY(-100%);
+    background-image: url('../assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hadist {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .home.active {
@@ -17,8 +29,8 @@
 }
 
 .home h2 {
-    font-size: 2.4rem;
-    font-family: var(--sacramento);
+    font-size: 3rem;
+    font-family: 'Sinthya', cursive;
     font-weight: 400;
 }
 
@@ -27,18 +39,15 @@
 }
 
 .home figure img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
     object-fit: cover;
-    box-shadow: var(--shadow-md);
 }
 
 .home figure figcaption {
     margin: 0 0 0.5rem;
-    font-weight: 400;
-    font-family: var(--sacramento);
-    font-size: var(--fontSize-heading-lg);
+    font-size: 3rem;
+    font-family: 'Sinthya', cursive;
 }
 
 .home h3 {
@@ -105,4 +114,89 @@
     right: 0;
     bottom: -14rem;
     z-index: -10;
+}
+
+.hadist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Vertikal */
+  align-items: center;       /* Horizontal */
+  text-align: center;
+  min-height: 100vh;         /* Supaya tengah layar */
+  padding: 2rem;
+  position: relative;
+}
+
+.hadist h2,
+.hadist p {
+  max-width: 800px;
+}
+
+.hadist h2 {
+    font-size: 3rem;
+    font-family: 'Sinthya', cursive;
+    font-weight: 400;
+}
+
+.hadist i {
+  font-size: 2rem;
+  color: #b44b4b;
+  margin-top: 1.5rem;
+}
+
+
+.message {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.message .container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#ucapanList {
+  margin-top: 30px;
+}
+
+.ucapan-item {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 4px solid #333;
 }

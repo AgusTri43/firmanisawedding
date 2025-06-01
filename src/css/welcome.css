@@ -6,17 +6,21 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-color: #212529;
+    background-image: url('../assets/images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 99;
-    color: #fff;
+    color: #000000;
     transition: all 2s ease-in;
     opacity: 0;
     transform: translateY(-100%);
+    
 }
 
 .welcome.active {
@@ -30,8 +34,8 @@
 }
 
 .welcome h2 {
-    font-size: 2.4rem;
-    font-family: var(--sacramento);
+    font-size: 3rem;
+    font-family: 'Sinthya', cursive;
     font-weight: 400;
 }
 
@@ -44,18 +48,33 @@
 }
 
 .welcome figure img {
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: var(--shadow-md);
-    border: 2px solid #fff;
+}
+
+.figure-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.caption-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.caption-wrapper figcaption,
+.caption-wrapper p {
+    margin: 0;
 }
 
 .welcome figure figcaption {
-    font-size: var(--fontSize-heading-base);
-    font-family: var(--sacramento);
-    font-weight: 400;
+    font-size: 4rem;
+    font-family: 'Sinthya', cursive;
+
     margin-top: 0.5rem;
 }
 
@@ -71,6 +90,7 @@
     justify-content: inherit;
     gap: 0.4rem;
     color: #000;
+    background-color: #aa966b;
     padding: 0.5rem 1rem;
     border: none;
     transition: var(--transition-small);
@@ -80,7 +100,7 @@
 
 .welcome button:hover {
     color: #fff;
-    background-color: #000;
+    background-color: #786642;
 }
 
 .welcome button i {

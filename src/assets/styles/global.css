@@ -1,7 +1,5 @@
 :root {
     --primary-font-color: '#212529';
-    --bg-color: #f8f9fa;
-
     --fontSize-heading-lg: 3rem;
     --fontSize-heading-base: 2.8rem;
     --fontSize-text-base: 1rem;
@@ -12,6 +10,13 @@
     --shadow-md: 0 0 10px rgba(0, 0, 0, 0.3);
 
     --transition-small: all .3s ease;
+}
+
+@font-face {
+    font-family: 'Sinthya';
+    src: url('../fonts/Sinthya.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html {

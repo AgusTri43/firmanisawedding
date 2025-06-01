@@ -1,14 +1,22 @@
+
 .time {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     text-align: center;
-    padding: 10rem 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
+    background-image: url('../assets/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
-
 .time h2 {
-    font-family: var(--sacramento);
-    font-size: var(--fontSize-heading-base);
+    font-size: 2rem;
+    font-family: 'Sinthya', cursive;
     font-weight: 400;
 }
 

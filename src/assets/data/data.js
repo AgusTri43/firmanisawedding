@@ -2,7 +2,7 @@ export const data = {
     bride: {
         L: {
             id: 1,
-            name: 'Lorem Ipsum',
+            name: 'Firman',
             child: 'Putra ke lorem',
             father: 'Lorem',
             mother: 'Ipsum',
@@ -10,7 +10,7 @@ export const data = {
         },
         P: {
             id: 2,
-            name: 'Ipsum Lorem',
+            name: 'Nisa',
             child: 'Putri ke lorem',
             father: 'Lorem',
             mother: 'Ipsum',
@@ -22,20 +22,20 @@ export const data = {
 
     time: {
         marriage: {
-            year: '2030',
-            month: 'November',
-            date: '14',
-            day: 'Kamis',
+            year: '2025',
+            month: 'Juni',
+            date: '08',
+            day: 'Minggu',
             hours: {
                 start: '08.00',
                 finish: 'Selesai'
             }
         },
         reception: {
-            year: '2024',
-            month: 'November',
-            date: '14',
-            day: 'Kamis',
+            year: '2025',
+            month: 'Juni',
+            date: '08',
+            day: 'Minggu',
             hours: {
                 start: '11.00',
                 finish: 'Selesai'
@@ -45,8 +45,7 @@ export const data = {
     },
 
     link: {
-        calendar: 'https://calendar.app.google/oSVLRMYC79GzuA4f9',
-        map: 'https://maps.app.goo.gl/q1Ask2Jgd4ekiiKBA',
+        map: 'https://maps.app.goo.gl/Esb2XfVr2jogfW619',
     },
 
     galeri: [
@@ -87,9 +86,9 @@ export const data = {
         },
     ],
 
-    audio: './src/assets/audio/wedding.mp3',
+    /**audio: './src/assets/audio/wedding.mp3',**/
 
-    api: 'https://script.google.com/macros/s/AKfycbyydz6N4p2VWUG8zsXeURv6ap9RP8a4eC3x6N3x6qTDjMVr1cIBz9S0NsHw2rWvBOSXGg/exec',
+    api: 'https://script.google.com/macros/s/AKfycbxoEaEPLntxvmfHMAvUoH_6uC76-RvNA8h-7v5agLnRZgGf18nc9Qk59TE2Bx9nCkEg/exec',
 
     navbar: [
         {

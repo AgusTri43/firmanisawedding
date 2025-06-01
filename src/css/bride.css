@@ -101,10 +101,9 @@
 }
 
 .hadist h2 {
-    font-size: var(--fontSize-heading-base);
-    font-family: var(--sacramento);
+    font-size: 2rem;
+    font-family: 'Sinthya', cursive;
     font-weight: 400;
-    margin-bottom: 1rem;
 }
 
 .hadist p span {
