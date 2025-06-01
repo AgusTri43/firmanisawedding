@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwioC_eI_gq7MpxpiYs7orIR4ubvJVi_DKh2uMPTF_t4PgG80_Zw_DMkSjLpFWugeY0/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxeiSgLF1PM60p2xU9GGUn5ZqLBvYi9gVJBvthT1Yb9dpD1Xgm0qNwqpLySW9-3edAa/exec';
 
 function submitUcapanForm() {
   const form = document.getElementById('ucapanForm');
