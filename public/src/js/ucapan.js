@@ -32,4 +32,16 @@ function submitUcapanForm() {
   });
 }
 
-export { submitUcapanForm };
+function copyRekening(noRek) {
+  navigator.clipboard.writeText(noRek).then(() => {
+    Swal.fire({
+      icon: 'success',
+      title: 'Disalin!',
+      text: 'Nomor rekening berhasil disalin.',
+      confirmButtonText: 'Tutup'
+    });
+  });
+}
+window.copyRekening = copyRekening;
+
+export { submitUcapanForm};
