@@ -1,45 +1,44 @@
-footer {
-    width: 100%;
-    padding: 4rem 8rem;
-    text-align: center;
-    background-image: url('../assets/images/background.png');
+.footer {
+  width: 100%;
+  text-align: center;
+  background: #fffbef;
+  padding: 2rem 2rem 2.5rem 2rem;
+  box-sizing: border-box;
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-footer h2 {
-    font-size: var(--fontSize-heading-base);
-    font-family: var(--sacramento);
+.footer-text p {
+  max-width: 35rem;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer h2 {
+    font-size: 2rem;
+    font-family: 'Sinthya', cursive;
     font-weight: 400;
-    margin-top: 1rem;
+  margin: 0.3rem 0;
 }
 
-footer h4 {
-    font-size: 1.6rem;
-    font-family: var(--arabic);
-    font-weight: 400;
+.footer h4 {
+  font-size: 1.6rem;
+  font-family: var(--arabic, 'Amiri', serif);
+  font-weight: 400;
+  margin: 0.3rem 0;
 }
 
-footer > div {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid #000;
-    margin-top: 1rem;
-    padding-top: 0.6rem;
+.footer-bottom {
+  border-top: 1px solid #000;
+  padding-top: 0.8rem;
+  font-size: 0.75rem;
 }
 
-footer > div p {
-    font-size: 0.6rem;
-}
-
-footer > div p span {
-    font-weight: bold;
-}
-
-footer > div a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    font-size: 0.8rem;
+.footer-bottom span {
+  font-weight: bold;
 }

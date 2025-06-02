@@ -86,7 +86,7 @@ export const data = {
         },
     ],
 
-    audio: './src/assets/audio/wedding.mp3',
+    audio: 'public/src/assets/audio/wedding.mp3',
 
     api: 'https://script.google.com/macros/s/AKfycbxoEaEPLntxvmfHMAvUoH_6uC76-RvNA8h-7v5agLnRZgGf18nc9Qk59TE2Bx9nCkEg/exec',
 
@@ -99,24 +99,12 @@ export const data = {
         },
         {
             id: 2,
-            teks: 'Mempelai',
-            icon: 'bx bxs-group',
-            path: '#bride',
-        },
-        {
-            id: 3,
             teks: 'Tanggal',
             icon: 'bx bxs-calendar-check',
             path: '#time',
         },
         {
-            id: 4,
-            teks: 'Galeri',
-            icon: 'bx bxs-photo-album',
-            path: '#galeri',
-        },
-        {
-            id: 5,
+            id: 3,
             teks: 'Ucapan',
             icon: 'bx bxs-message-rounded-dots',
             path: '#wishas',

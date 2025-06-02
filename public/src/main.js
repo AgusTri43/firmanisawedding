@@ -1,6 +1,6 @@
 import {home} from "./js/home.js";
 import {time} from "./js/time.js";
-import { submitUcapanForm, loadUcapan } from './js/ucapan.js';
+import { submitUcapanForm} from './js/ucapan.js';
 import {navbar} from "./js/navbar.js";
 import {welcome} from "./js/welcome.js";
 
@@ -13,5 +13,4 @@ document.addEventListener('DOMContentLoaded', () => {
     home();
     time();
     submitUcapanForm();
-    loadUcapan();
 });

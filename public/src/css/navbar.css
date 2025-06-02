@@ -3,27 +3,28 @@ header {
 }
 
 header nav {
-    display: none;
-    width: 100%;
+    display: none !important;
+    width: calc(100% - 2rem); /* supaya ada jarak kiri dan kanan */
     padding: 0 1.4rem;
-    background-color: var(--bg-color);
+    background-color: white;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    left: 0;
-    right: 0;
-    bottom: -100%;
+    left: 1rem; /* beri jarak kiri */
+    right: 1rem; /* beri jarak kanan */
+    bottom: 1rem; /* beri jarak bawah */
     z-index: 99;
-    transform: translateY(0);
-    transition: bottom 2s ease, transform 1s ease;
+    transform: none;
+    transition: none;
+    border-top: 1px solid #ddd;
+    border-radius: 15px; /* buat sudut membulat */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* opsional, supaya ada bayangan */
 }
 
-header nav.active {
-    bottom: 0;
-}
-
+header nav.active,
 header nav.scroll {
-    transform: translateY(100%);
+    bottom: 0; /* tidak perlu efek naik/turun */
+    transform: none;
 }
 
 header nav a {
@@ -35,6 +36,7 @@ header nav a {
     width: 4rem;
     height: 3rem;
     color: #000;
+    text-decoration: none;
 }
 
 header nav a i {

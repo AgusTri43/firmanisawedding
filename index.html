@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Fonts Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +32,7 @@
     <link rel="stylesheet" href="public/src/css/wishas.css">
     <link rel="stylesheet" href="public/src/css/footer.css">
     <link rel="stylesheet" href="public/src/css/mediaQueries.css">
+    <link rel="stylesheet" href="public/src/css/ucapan.css">
 
     <title>wedding - invitation</title>
 </head>
@@ -110,37 +113,40 @@
         </button>
     </section>
 
-    <section>
+    <section class="ucapan" id="ucapan" aria-labelledby="ucapan-title">
         <div class="container">
-    <h1>Ucapan & Doa</h1>
-    <form id="ucapanForm">
-      <input type="text" name="nama" placeholder="Nama" required>
-      <select name="kehadiran" required>
-        <option value="">konfirmasi kehadiran</option>
-        <option value="Hadir">Hadir</option>
-        <option value="Tidak Hadir">Tidak Hadir</option>
-      </select>
-      <textarea name="ucapan" rows="4" placeholder="Tulis ucapan & Doa" required></textarea>
-      <button type="submit">Kirim</button>
-    </form>
+            <h1>Ucapan & Doa</h1>
+                <form id="ucapanForm">
+                <input type="text" name="nama" placeholder="Nama" required>
+                <select name="kehadiran" required>
+                    <option value="">konfirmasi kehadiran</option>
+                    <option value="Hadir">Hadir</option>
+                    <option value="Tidak Hadir">Tidak Hadir</option>
+                </select>
+                <textarea name="ucapan" rows="4" placeholder="Tulis ucapan & Doa" required></textarea>
+                <button type="submit">Kirim</button>
+                </form>
 
-    <div id="ucapanList"></div>
-  </div>
+            <div id="ucapanList"></div>
+        </div>
     </section>
-</main>
 
-<footer>
-    <p>Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan
-        do'a restu kepada kedua mempelai.</p>
-    <h2>Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
-    <h4> اَلْحَمْدُ للَّهِ رَبِّ الْعالَمِينَ</h4>
-    <div>
-        <p>Build with <span>Agus Tri Adiana</span></p>
-        <a href="">
-        </a>
+    <section class="footer" id="footer" aria-labelledby="footer-title">
+    <div class="footer-text">
+        <p>Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan
+            do'a restu kepada kedua mempelai
+        <h2>Wassalamualaikum Warahmatullahi Wabarakatuh</h2>
+        <h4>ٱلْـحَـمْـدُ لِلّٰهِ رَبِّ ٱلْعَـٰلَمِـينَ</h4>
     </div>
-</footer>
+    <div class="footer-bottom">
+        <p>Build by <span>Agus Tri Adiana</span></p>
+        <p>Redesign from <span>Sandi Perdiansah</span></p>
+    </div>
+</section>
 
+    </section>
+
+</main>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="public/src/main.js" type="module"></script>
 </body>
